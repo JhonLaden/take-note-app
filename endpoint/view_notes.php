@@ -21,7 +21,7 @@
                                     $formattedDateTime = date('m/d/Y  |  H:i', strtotime($noteDateTime));
 
                                 ?>
-                                    <a href="viewing_note.php?view=<?php echo $noteID ?>" class=" p-2 col-12 col-md-4 col-lg-4 g-4">
+                                    <a href="viewing_note.php?view=<?php echo $noteID ?>" class=" p-2 col-12 col-md-4 col-lg-3 g-4">
                                         <div class="note-card border position-relative " style = "background-color: <?php echo $row['bg_color'] ?>">
                                        
 
