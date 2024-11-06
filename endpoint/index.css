@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Dancing+Script:wght@400..700&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+
+a {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Inherits the color from its parent element */
+    background: transparent; /* Removes any background */
+    border: none; /* Removes any border (in case of button-like links) */
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+    color: inherit;
+    background: transparent;
+    border: none;
+}
+
+body{
+    font-family: 'Libre Caslon Text','Arial', sans-serif;
+}
+
+.note-card{
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px gray;
+    transition: all;
+    transition-duration: 0.2s;
+}
+
+.note-card:hover{
+    box-shadow: 2px 5px 10px gray;
+}
+
+.break-line{
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+
+    padding:0;
+}
+
+.note-header{
+    right: 0;
+}
+
+.note{
+    font-size: 2rem;
+    text-align: center;
+    font-family: Sans-serif Fonts;
+}
+
+.dancing-script{
+    font-family: "Dancing Script", cursive;
+}
+
+.allura-regular {
+    font-family: "Allura", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.bottom-right{
+    bottom: 0;
+    right: 0;
+}
+.invi{
+    opacity: 0;
+    
+}
+
+.dirty-white{
+    background-color: #f6f8fa     ;
+}
+
+.parent-custom-card{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0; 
+    overflow: hidden;
+}
+
+.note-content {
+    max-height: 20em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+.custom-card {
+    height: 100px;
+    width: 100px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: all;
+    transition-duration: 1s;
+}
+
+.add-height{
+    height: 300%;
+    width: 500%;
+}
+
+.danger-button{
+    border: none;
+}
+
+.danger-button:hover {
+    color: white;
+    background-color: crimson;
+}
+
+
+
