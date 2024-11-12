@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($stmt->execute()) {
         // Redirect to the update.php page with a success message
-        header("Location: http://localhost/take-note-app/");
+        header("Location: ../");
         exit();
     } else {
         // Redirect to the update.php page with an error message
@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 } else {
     // Redirect to the update.php page if accessed directly without submitting the form
-    header("Location: http://localhost/take-note-app/");
+    header("Location: ../");
     exit();
 }
 ?>

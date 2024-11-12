@@ -10,16 +10,16 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['delete'])) {
 
     if ($stmt->execute()) {
         // Redirect back to the update.php page with a success message
-        header("Location: http://localhost/take-note-app/");
+        header("location: ../");
         exit();
     } else {
         // Redirect back to the update.php page with an error message
-        header("Location: http://localhost/take-note-app/");
+        header("location: ../");
         exit();
     }
 } else {
     // Redirect to the update.php page if accessed directly or without a valid note ID
-    header("Location: http://localhost/take-note-app/");
+    header("location: ../");
     exit();
 }
 ?>

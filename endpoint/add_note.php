@@ -17,10 +17,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt->bindParam(':date_time', $dateTime);
         $stmt->execute();
         echo "Note added successfully!";
-        header("location: http://localhost/take-note-app/");
+        header("location: ../");
     } catch (PDOException $e) {
         echo "Error: " . $e->getMessage();
-        header("location: http://localhost/take-note-app/");
+        header("location: ../");
     }
 }
 
