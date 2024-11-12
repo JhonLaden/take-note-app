@@ -65,7 +65,7 @@ include('conn/conn.php');
                 <div class="card">
                     <div class="card-header">
                         Notes
-                        <a href="http://localhost/take-note-app/" class="float-right">Back</a>
+                        <a href="index.php" class="float-right">Back</a>
                     </div>
 
                     <div class="card-body">
