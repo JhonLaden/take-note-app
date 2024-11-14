@@ -1,5 +1,5 @@
 <?php
-include('conn/conn.php');
+include('../conn/conn.php');
 ?>
 
 <!DOCTYPE html>
@@ -30,33 +30,11 @@ include('conn/conn.php');
 </head>
 <body>
     
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark col-12">
-        <a class="navbar-brand" href="#">Take-Note App</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Account
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Vew Account</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Log Out</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
-                    </form>
-                </li>
-            </ul>
+    <div class = "" style = "width: 95%; margin: auto; margin-top: 1em;">
+        <div style = "height: 50px; width: 100px; ">
+            <img class ="img-fluid w-100 h-100" src="../notepuff.jpg" alt="Logo">
         </div>
-    </nav>
+    </div>
 
     <div class="main-panel mt-4 ml-5 col-11">
         <div class="row">
@@ -65,7 +43,7 @@ include('conn/conn.php');
                 <div class="card">
                     <div class="card-header">
                         Notes
-                        <a href="index.php" class="float-right">Back</a>
+                        <a href="home.php" class="float-right">Back</a>
                     </div>
 
                     <div class="card-body">
@@ -73,7 +51,7 @@ include('conn/conn.php');
                             <ul class="list-group">
 
                             <?php
-                            include('conn/conn.php');
+                            include('../conn/conn.php');
 
                             $stmt = $conn->prepare("SELECT * FROM `tbl_notes`");
                             $stmt->execute();

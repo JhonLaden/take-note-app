@@ -2,7 +2,7 @@
                 <div class="card">
                     <div class="card-header">
                         Notes Details
-                        <a href="../all_notes.php" class="float-right">View All Notes</a>
+                        <a href="all_notes.php" class="float-right">View All Notes</a>
                     </div>
 
                     <div class="card-body dirty-white">
